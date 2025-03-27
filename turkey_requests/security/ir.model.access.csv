@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_picking,access.stock.picking,stock.model_stock_picking,base.group_user,1,1,1,1
+access_sale_order,access.sale.order,sale.model_sale_order,base.group_user,1,1,1,1
+access_res_users_apikeys,access.res.users.apikeys,base.model_res_users_apikeys,base.group_user,1,1,1,1
+access_product_product,access.product.product,product.model_product_product,base.group_user,1,1,1,1
+access_res_partner,access.res.partner,base.model_res_partner,base.group_user,1,1,1,1
+access_stock_warehouse,access.stock.warehouse,stock.model_stock_warehouse,base.group_user,1,1,1,1
+access_api_endpoint_calls,access.api.endpoint.calls,turkey_requests.model_api_endpoint_calls,base.group_user,1,1,1,1
+access_api_endpoints,access.api.endpoints,turkey_requests.model_api_endpoints,base.group_user,1,1,1,1
+access_api_delivery_orders_log_user,access.api.delivery.orders.log.user,model_api_delivery_orders_log,,1,1,1,1
+access_api_delivery_orders_update_log_user,access.api.delivery.orders.update.log.user,model_api_delivery_orders_update_log,,1,1,1,1
+access_api_sale_order_data_log_user,access.api.sale.order.data.log.user,model_api_sale_order_data_log,base.group_user,1,1,1,1

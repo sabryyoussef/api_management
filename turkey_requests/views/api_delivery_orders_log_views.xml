@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_api_delivery_orders_log_tree" model="ir.ui.view">
+        <field name="name">api.delivery.orders.log.tree</field>
+        <field name="model">api.delivery.orders.log</field>
+        <field name="arch" type="xml">
+            <list string="Delivery Orders API Logs">
+                <field name="timestamp"/>
+                <field name="total_found"/>
+                <field name="assignee_count"/>
+                <field name="status"/>
+                <field name="message"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_api_delivery_orders_log_form" model="ir.ui.view">
+        <field name="name">api.delivery.orders.log.form</field>
+        <field name="model">api.delivery.orders.log</field>
+        <field name="arch" type="xml">
+            <form string="Delivery Orders API Log">
+                <sheet>
+                    <group>
+                        <field name="timestamp"/>
+                        <field name="total_found"/>
+                        <field name="assignee_count"/>
+                        <field name="status"/>
+                        <field name="message"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_api_delivery_orders_log" model="ir.actions.act_window">
+        <field name="name">Delivery API Logs</field>
+        <field name="res_model">api.delivery.orders.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_api_delivery_root" name="API Monitoring" sequence="10"/>
+
+    <menuitem id="menu_api_delivery_orders_log"
+              name="Delivery Orders Logs"
+              parent="menu_api_delivery_root"
+              action="action_api_delivery_orders_log"
+              sequence="20"/>
+
+</odoo>
